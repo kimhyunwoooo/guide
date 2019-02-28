@@ -29,7 +29,7 @@ const optimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const rootPaths = {
   entry: path.resolve(__dirname, 'src/origin'),
-  output: path.resolve(__dirname, 'src/dist')
+  output: path.resolve(__dirname, 'src/docs')
 };
 // entry paths
 const entryPaths = {
@@ -198,7 +198,7 @@ module.exports = env => {
     },
     plugins: [
       new VueLoaderPlugin(),
-      new cleanWebpackPlugin(['./src/dist']),
+      new cleanWebpackPlugin(['./src/docs']),
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery"
