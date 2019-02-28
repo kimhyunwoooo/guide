@@ -24,7 +24,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: '샘플이다 잘뜨는지 보자꾸나 음훼훼훼'
     }
   }
 }
