@@ -1,23 +1,3 @@
-/*
-	[ webpack.config.js ]
-	- BABEL
-	- SASS
-	- imageOptimize
-*/
-
-/*
-	[ todo ]
-	> 1차
-		- package.json 수정
-
-	> 2차
-		- html, css 이미지 경로 설정(내부 작업 환경 정리 후)
-		- postCSS 기능 설정 추가
-		- image-optimize 상세 값 설정
-
-		- 라이브러리의 별도 번들링(캐시, 로딩속도 개선), https://medium.com/@soeunlee/webpack%EC%9D%84-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%97%90-%EC%A0%81%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0-a5ccfec070f3
-*/
-
 // node modules
 const fs = require('fs');
 const path = require('path');

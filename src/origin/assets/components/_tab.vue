@@ -1,13 +1,9 @@
 <template>
-    
+
 </template>
 
 <script>
     export default {
-        name: "_tab"
+        name: "tab-list"
     }
 </script>
-
-<style scoped>
-
-</style>
