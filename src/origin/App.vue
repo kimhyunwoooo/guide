@@ -8,16 +8,14 @@
           <div class="inner_bar" style="width: 48px; margin-left: -24px;"></div>
         </div>
         <ul class="list-tab">
-          <li class="on">
-
-            <router-link to="/" class="link-tab">Home</router-link>
+          <li>
+            <router-link to="/home" class="link-tab">Home</router-link>
           </li>
           <li>
             <router-link to="/about" class="link-tab">about</router-link>
           </li>
           <li>
             <router-link to="/update" class="link-tab">update</router-link>
-
           </li>
           <li>
             <router-link to="/docs" class="link-tab">Docs</router-link>

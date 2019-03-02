@@ -4,8 +4,9 @@ import update from './assets/components/pages/_update.vue';
 import docs from './assets/components/pages/_docs.vue';
 
 export default  [
-  {path: '/',component:home},
+  {path: '/home',component:home},
   {path: '/about',component:about},
   {path: '/update',component:update},
   {path: '/docs',component:docs},
+  {path: '/', redirect: '/home'}
 ]
