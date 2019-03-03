@@ -6,7 +6,7 @@
       <ul class="list-update">
         <li>
           <div class="head-list">
-            <img src="src/origin/assets/images/ic-framer@2x.png" width="24" height="24" alt="">
+            <img src="../images/ic-framer@2x.png" width="24" height="24" alt="">
           </div>
           <div class="body-list">
             <strong class="title-update">Paging Interaction</strong>

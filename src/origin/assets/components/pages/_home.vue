@@ -24,8 +24,8 @@
         <li>
           <a href="#none" class="link-thumb">
                   <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url('src/origin/assets/images/move.gif')"></span>
-                    <span class="box-photo" style="background-image:url('src/origin/assets/images/photo.jpg')"></span>
+                    <span class="box-gif" style="background-image:url('../images/move.gif')"></span>
+                    <span class="box-photo" style="background-image:url('../images/photo.jpg')"></span>
                   </span>
             <span class="box-thumb"></span>
             <span class="box-detail">VIEW MORE</span>
