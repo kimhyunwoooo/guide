@@ -8,5 +8,6 @@ export default  [
   {path: '/about',component:about},
   {path: '/update',component:update},
   {path: '/docs',component:docs},
-  {path: '/', redirect: '/home'}
+  {path: '/', redirect: '/home'},
+  {path: '/none', redirect: '/home'}
 ]

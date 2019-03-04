@@ -23,7 +23,7 @@ const outputPaths = {
   images: path.resolve(rootPaths.output, 'assets/images')
 };
 // cdn paths
-const cdnPath = './';
+const cdnPath = 'https://kimhyunwoooo.github.io/guide/docs/';
 
 // entry htmlList(htmlWebpackPlugin) - 루트 폴더 내 모든 *.html을 가져오도록 설정
 let entryHtmlFiles = (() => {

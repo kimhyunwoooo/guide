@@ -1,9 +1,9 @@
 <template>
-  <div class="section-sidebar ">
+  <div class="section-sidebar" v-bind:class="{side__close:toggleBar}">
     <h1 class="title-logo">
       <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
     </h1>
-    <button type="button" class="btn-fold"><span class="icon-fold">메뉴 접기</span></button>
+    <button type="button" class="btn-fold" v-on:click="toggleBar = !toggleBar"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">
       <h2 class="title-navigation">네비게이터</h2>
       <ul class="nav-wrap">
@@ -171,6 +171,11 @@
 
 <script>
     export default {
-        name: "side-bar"
+      name: "side-bar",
+      data : function(){
+        return {
+           toggleBar: false
+        }
+      }
     }
 </script>

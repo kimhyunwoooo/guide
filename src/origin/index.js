@@ -23,4 +23,3 @@ new Vue({
   router : router
 });
 
-

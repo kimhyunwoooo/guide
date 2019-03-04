@@ -128,12 +128,14 @@ $nav-height: 240;
   top:0;
   left:0;
   bottom:0;
+  z-index:999;
   width:$nav-height + px;
   padding:75px 0 0 40px;
   box-sizing:border-box;
   box-shadow:5px 0px 30px 3px rgba(0,0,0,0.03);
   transition:width .3s, padding-left .1s;
   -ms-overflow-style: none;
+  background:#fff;
   &::-webkit-scrollbar {
   display:none;
   }
