@@ -1,7 +1,7 @@
-import home from './assets/components/pages/_home.vue';
+import home from './assets/components/_home.vue';
 import about from './assets/components/_about.vue';
 import update from './assets/components/_update.vue';
-import docs from './assets/components/pages/_docs.vue';
+import docs from './assets/components/_docs.vue';
 
 export default  [
   {path: '/home',component:home},

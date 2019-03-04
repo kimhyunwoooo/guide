@@ -164,7 +164,7 @@ module.exports = env => {
           use: {
             loader: 'html-loader',
             options: {
-              attrs: ["img:src"]
+              attrs: ["span:style","img:src"]
             }
           }
         },

@@ -1,5 +1,5 @@
 <template>
-  <div class="article-content" style="display:none;"><!-- list-view__image -->
+  <div class="article-content"><!-- list-view__image -->
     <ul class="list-type">
       <li>
         <a href="#none" class="link-type">
@@ -24,8 +24,9 @@
         <li>
           <a href="#none" class="link-thumb">
                   <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url('src/origin/assets/images/move.gif')"></span>
-                    <span class="box-photo" style="background-image:url('src/origin/assets/images/photo.jpg')"></span>
+                    <img src="../images/photo.jpg" alt="" width="100" height="100">
+                    <span class="box-gif" style="background-image:url(../images/photo.jpg)"></span>
+                    <span class="box-photo" style="background-image:url('../images/photo.jpg')"></span>
                   </span>
             <span class="box-thumb"></span>
             <span class="box-detail">VIEW MORE</span>
@@ -325,7 +326,7 @@
 </template>
 
 <script>
+
     export default {
-        name: "home-List"
-    }
+          }
 </script>
