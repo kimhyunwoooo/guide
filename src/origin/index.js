@@ -22,3 +22,19 @@ new Vue({
   render: h => h(App),
   router : router
 });
+
+
+// GNB Bar 애니메이션
+$('.list-tab>li').on('mouseenter', function() {
+  var menuIndex = $(this).index();
+  var menuNum = $('.list-tab>li:eq('+menuIndex+') .link-tab');
+  var menuWid = parseInt( menuNum.outerWidth() );
+  var menuPos = parseInt( menuNum.position().left);
+  $('.bar_menu').stop().animate({
+    left : menuPos + parseInt((menuWid/2))
+  },200);
+  $('.inner_bar').stop().animate({
+    width : menuWid+3,
+    marginLeft : -(menuWid/2)
+  },400);
+});
