@@ -227,11 +227,14 @@ $nav-height: 240;
     max-width:1040px;
     margin:0 auto;
     padding:0 69px;
-    animation-duration: .15s;
-    animation-name: show-in;
-    animation-timing-function :ease-in-out;
   }
 }
+#pageUpdate,#pageAbout,.view-item {
+  animation-duration: .15s;
+  animation-name: show-in;
+  animation-timing-function :ease-in-out;
+}
+
 @keyframes show-in {
   from {opacity:0;transform:translateY(5px)}
   to {opacity:1;transform:translateY(0px)}
@@ -265,8 +268,11 @@ $nav-height: 240;
     font-size:13px;
     font-weight:700;
     transition:opacity .15s;
-    &:hover{
+    &:hover,&.link-type__on{
       opacity:1;
+    }
+    &:active {
+      @include activeBtn;
     }
   }
   .icon-mockup {
@@ -323,12 +329,16 @@ $nav-height: 240;
       }
     }
     .link-tab {
+      display:inline-block;
       @include head-lv3;
       line-height:24px;
       padding:0 2px;
       transition:all .15s;
       &:hover {
         color:$ink;
+      }
+      &:active {
+        @include activeBtn;
       }
     }
   }
@@ -375,7 +385,13 @@ $nav-height: 240;
       height:306px;
       background-repeat:no-repeat;
       background-position:50%;
-      background-size:cover
+      background-size:cover;
+      .img-view {
+        display:block;
+        vertical-align:top;
+        width:172px;
+        height:306px;
+      }
     }
     .box-gif {
       z-index: 10;
@@ -452,7 +468,7 @@ $nav-height: 240;
 //image view
 $view-size__width:230px;
 $view-size__height:210px;
-.list-view__image {
+.list-view__mockup {
   .list-item > li {
     width:230px;
     height:330px;
@@ -462,7 +478,7 @@ $view-size__height:210px;
       display:block;
       width:$view-size__width;
       height:$view-size__height;
-      .bg-phone,.box-gif,.box-photo {
+      .bg-phone,.box-gif,.box-photo,.img-view {
         display: block;
         top:0;
         left:0;
@@ -507,6 +523,16 @@ $view-size__height:210px;
       padding:10px 0 0 0;
     }
   }
+}
+.list-view__mockup .view-item {
+  animation-duration: .15s;
+  animation-name: fade-in;
+  animation-timing-function :ease-in-out;
+}
+
+@keyframes fade-in {
+  from {opacity:0;transform:translateY(5px)}
+  to {opacity:1;transform:translateY(0px)}
 }
 
 //서브 공통

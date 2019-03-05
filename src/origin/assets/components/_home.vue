@@ -1,14 +1,14 @@
 <template>
-  <div class="article-content"><!-- list-view__image -->
+  <div id="pageHome" v-bind:class="[toggleView ? 'article-content list-view__mockup':'article-content']">
     <ul class="list-type">
       <li>
-        <a href="#none" class="link-type">
+        <a href="#none" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
           <span class="icon-mockup"></span>
           Mock up
         </a>
       </li>
       <li>
-        <a href="#none" class="link-type">
+        <a href="#none" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
           <span class="icon-imagelist"></span>
           Image List
         </a>
@@ -23,11 +23,14 @@
       <ul class="list-item">
         <li>
           <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <img src="../images/photo.jpg" alt="" width="100" height="100">
-                    <span class="box-gif" style="background-image:url(../images/photo.jpg)"></span>
-                    <span class="box-photo" style="background-image:url('../images/photo.jpg')"></span>
-                  </span>
+            <span class="bg-phone">
+              <span class="box-gif">
+                <img src="../images/move.gif" class="img-view" alt="">
+              </span>
+              <span class="box-photo">
+                <img src="../images/photo.jpg" class="img-view" alt="">
+              </span>
+            </span>
             <span class="box-thumb"></span>
             <span class="box-detail">VIEW MORE</span>
           </a>
@@ -328,5 +331,10 @@
 <script>
 
     export default {
-          }
+      data : function(){
+        return {
+          toggleView:false
+        }
+      }
+    }
 </script>

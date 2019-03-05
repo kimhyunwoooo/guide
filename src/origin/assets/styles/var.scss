@@ -46,3 +46,7 @@ $gray20 : #eee;
   @include font-style(10px,14px,normal,$gray45,0)
 }
 
+
+@mixin activeBtn {
+  transform: scale(0.98);
+}
