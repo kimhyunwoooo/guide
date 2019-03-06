@@ -229,7 +229,7 @@ $nav-height: 240;
     padding:0 69px;
   }
 }
-#pageUpdate,#pageAbout,.view-item {
+#pageUpdate,#pageAbout,#pageDocs,.view-item {
   animation-duration: .15s;
   animation-name: show-in;
   animation-timing-function :ease-in-out;
@@ -575,6 +575,19 @@ $view-size__height:210px;
         widht:24px;
         height:24px;
       }
+      .icon-new {
+        overflow:hidden;
+        position:absolute;
+        top:0;
+        right:0;
+        width:6px;
+        height:6px;
+        border:3px solid #fff;
+        border-radius:50%;
+        background:#da1a1a;
+        text-indent:-9999px;
+
+      }
     }
     .foot-list {
       position:absolute;
@@ -622,6 +635,25 @@ $view-size__height:210px;
   }
 }
 
+//docs
+.list-docs {
+  padding-top:24px;
+  border-top:1px solid $gray20;
+  border-bottom:1px solid $gray20;
+  min-height:504px;
+  .link-docs {
+    display:block;
+  }
+  .title-docs {
+    display:block;
+    @include head-lv2;
+    margin-bottom:16px;
+  }
+  .text-docs {
+    margin-bottom:40px;
+    @include text-body;
+  }
+}
 
 .section-copyright {
   margin-top:45px;
