@@ -6,7 +6,8 @@
       <ul class="list-update">
         <li v-for="(update, index) in updateItem">
           <div class="head-list">
-            <img :src="'/assets/images/ic-'+update.type+'@2x.png'" width="24" height="24" alt="">
+            <span v-if="update.newIcon">NEW</span>
+            <img :src="'https://kimhyunwoooo.github.io/guide/docs/assets/images/ic-'+update.type+'@2x.png'" width="24" height="24" alt="">
           </div>
           <div class="body-list">
             <strong class="title-update">{{ update.text }}</strong>
