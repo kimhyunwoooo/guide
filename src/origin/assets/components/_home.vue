@@ -320,11 +320,13 @@
         </li>
       </ul>
     </div>
-
+    <detail-modal></detail-modal>
   </div>
 </template>
 
 <script>
+
+  import detailModal from './_detail-Modal'
   import itemList from '../data/itemList'
     export default {
       data : function(){
@@ -332,6 +334,9 @@
           toggleView:false,
           itemList : itemList.item
         }
+      },
+      components: {
+        'detail-modal' : detailModal
       }
     }
 </script>

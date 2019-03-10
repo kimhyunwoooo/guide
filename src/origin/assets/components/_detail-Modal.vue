@@ -1,5 +1,5 @@
 <template>
-  <div class="modal">
+  <div class="modal" style="display: none;">
     <div class="modal-cont">
       <span class="text-cate">States</span>
       <div class="title">

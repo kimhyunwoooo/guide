@@ -25,6 +25,7 @@ new Vue({
 
 
 // GNB Bar 애니메이션
+/*
 $('.list-tab>li').on('mouseenter', function() {
   var menuIndex = $(this).index();
   var menuNum = $('.list-tab>li:eq('+menuIndex+') .link-tab');
@@ -38,3 +39,16 @@ $('.list-tab>li').on('mouseenter', function() {
     marginLeft : -(menuWid/2)
   },400);
 });
+*/
+
+
+let tabItem = document.querySelectorAll('.list-tab>li .link-tab');
+let targetBar = document.getElementById('tabBar')
+for (let i = 0; i < tabItem.length; i++){
+  tabItem[i].addEventListener("click",function (e) {
+    let targetPosition = this.dataset.position;
+    let targetWidth = this.dataset.width;
+    targetBar.style.left = targetPosition + 'px';
+    targetBar.style.width = targetWidth + 'px';
+  })
+}
