@@ -52,3 +52,17 @@ for (let i = 0; i < tabItem.length; i++){
     targetBar.style.width = targetWidth + 'px';
   })
 }
+
+//검색창 이벤트
+let searchBoxInp = document.getElementById('searchInp');
+searchBoxInp.addEventListener('blur', function(event){
+  let searchValue = searchBoxInp.value;
+  if (searchValue=="" || searchValue==null) {
+    searchBoxInp.setAttribute('placeholder','Search Script');
+    this.parentNode.classList.remove('on-focus')
+  }
+});
+searchBoxInp.addEventListener('focus', function(event){
+  searchBoxInp.setAttribute('placeholder','');
+  this.parentNode.classList.add('on-focus')
+});

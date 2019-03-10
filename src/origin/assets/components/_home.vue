@@ -16,7 +16,7 @@
     </ul>
     <div class="box-search">
       <span class="icon-search"></span>
-      <input type="text" class="input-search" placeholder="Search Script">
+      <input type="text" id="searchInp" class="input-search" placeholder="Search Script">
     </div>
     <div class="view-item">
       <h3 class="title-sub">Framer Interactions</h3>
