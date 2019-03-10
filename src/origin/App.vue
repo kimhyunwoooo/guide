@@ -24,18 +24,21 @@
       </div>
       <router-view></router-view>
     </div>
+    <detail-modal></detail-modal>
   </div>
 </template>
 
 <script>
 
 import sideBar from '../origin/assets/components/_sidebar.vue'
+import detailModal from '../origin/assets/components/_detail-Modal.vue'
 
 
 export default {
 
   components: {
     'side-bar' : sideBar,
+    'detail-modal' : detailModal,
   }
 }
 </script>

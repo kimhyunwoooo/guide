@@ -24,12 +24,8 @@
         <li>
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
-              <span class="box-gif">
-                <img src="../images/move.gif" class="img-view" alt="">
-              </span>
-              <span class="box-photo">
-                <img src="../images/photo.jpg" class="img-view" alt="">
-              </span>
+              <span class="box-gif" style="background-image:url(https://kimhyunwoooo.github.io/guide/docs/assets/images/move.gif)"></span>
+              <span class="box-photo" style="background-image:url(https://kimhyunwoooo.github.io/guide/docs/assets/images/photo.jpg)"></span>
             </span>
             <span class="box-thumb"></span>
             <span class="box-detail">VIEW MORE</span>
@@ -329,11 +325,12 @@
 </template>
 
 <script>
-
+  import itemList from '../data/itemList'
     export default {
       data : function(){
         return {
-          toggleView:false
+          toggleView:false,
+          itemList : itemList.item
         }
       }
     }

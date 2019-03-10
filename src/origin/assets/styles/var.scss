@@ -50,3 +50,11 @@ $gray20 : #eee;
 @mixin activeBtn {
   transform: scale(0.98);
 }
+
+@mixin font-style-item($display,$fontSize,$lineHeight,$color,$fontWeight){
+  display:$display;
+  font-size:$fontSize;
+  font-weight:$fontWeight;
+  line-height:$lineHeight;
+  color:$color;
+}
