@@ -1,5 +1,6 @@
 <template>
   <div class="section-sidebar" v-bind:class="{side__close:toggleBar}">
+    {{ filteredCountFramer.length }}
     <h1 class="title-logo">
       <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
     </h1>
@@ -180,10 +181,10 @@
         }
       },
       computed: {
-        filteredCount() {
-            return this.framerItem.filter(function(framer){
-              return framer.type == 1
-            })
+        filteredCountFramer() {
+          return this.framerItem.filter(function(e){
+            return e.type == 1
+          })
         }
       }
     }

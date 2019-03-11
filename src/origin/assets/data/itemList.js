@@ -83,7 +83,7 @@ const itemList = {
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 1,
-        type: 11,
+        type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
