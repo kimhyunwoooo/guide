@@ -91,7 +91,6 @@
             <span class="count-cate">(123)</span>
           </a>
         </li>
-
       </ul>
     </div>
     <div class="box-tools">
@@ -170,12 +169,32 @@
 </template>
 
 <script>
+  import itemList from '../data/itemList'
     export default {
       name: "side-bar",
       data : function(){
         return {
-           toggleBar: false
+          toggleBar: false,
+          typeItem : itemList.typeList,
+          framerItem : itemList.item.framer
+        }
+      },
+      computed: {
+        filteredCount() {
+            return this.framerItem.filter(function(framer){
+              return framer.type == 1
+            })
         }
       }
     }
+/*
+  filteredType() {
+    return this.filteredYear.filter((site) => {
+      if(this.selGame === 0){
+        return site;
+      }else{
+        return site.type == this.selGame
+      }
+    })
+  }*/
 </script>

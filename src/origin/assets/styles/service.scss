@@ -685,9 +685,6 @@ $view-size__height:210px;
   border-top:1px solid $gray20;
   border-bottom:1px solid $gray20;
   min-height:504px;
-  .link-docs {
-    display:block;
-  }
   .title-docs {
     display:block;
     @include head-lv2;
@@ -696,6 +693,13 @@ $view-size__height:210px;
   .text-docs {
     margin-bottom:40px;
     @include text-body;
+    > a {
+      color:$secondary;
+      font-weight:bold;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }
 

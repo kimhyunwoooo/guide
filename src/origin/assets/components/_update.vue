@@ -4,7 +4,7 @@
       <h3 class="title-sub">Update</h3>
       <p class="desc-sub">페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 화면을 테스트 할 수 있음</p>
       <ul class="list-update">
-        <li v-for="(update, index) in updateItem">
+        <li v-for="(update, index) in updateItem" :key="index">
           <div class="head-list">
             <span class="icon-new" v-if="update.newIcon">NEW</span>
             <img :src="'https://kimhyunwoooo.github.io/guide/docs/assets/images/ic-'+update.type+'@2x.png'" width="24" height="24" alt="">
