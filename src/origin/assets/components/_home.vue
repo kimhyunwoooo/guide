@@ -18,202 +18,28 @@
       <span class="icon-search"></span>
       <input type="text" id="searchInp" class="input-search" placeholder="Search Script">
     </div>
-    <div class="view-item">
+    <div class="view-item" data-tool="framer">
       <h3 class="title-sub">Framer Interactions</h3>
       <ul class="list-item">
         <li v-for="(framer, index) in framerItem" :key="index">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
-              <span class="box-gif">
-                <img src="../images/move.gif" class="img-view" alt="">
+              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/docs/assets/images/' + framer.gifImg + ')' }">
               </span>
-              <span class="box-photo">
-                <img src="../images/photo.jpg" class="img-view" alt="">
+              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/docs/assets/images/' + framer.jpgImg + ')' }">
               </span>
             </span>
             <span class="box-thumb"></span>
             <span class="box-detail">VIEW MORE</span>
           </a>
           <span class="text-cate">{{ typeItem[framer.type] }}</span>
-          <strong class="title-item">View ScreenView</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
+          <strong class="title-item">{{ framer.title }}</strong>
+          <p class="text-desc">{{ framer.desc }}</p>
+          <p class="text-type">{{ framer.used }}</p>
+          <a href="#none" class="link-example" target="_blank">{{ framer.url }}</a>
           <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <!--
-          id: 6,
-          type: 1,
-          tool: 1,
-          title: 'View Screen',
-          jpgImg: 'photo.jpg',
-          gifImg: 'move.gif',
-          desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
-          used: '활용영역 : 상세페이지/읽기페이지',
-          url: 'https://framer.cloud/vvVaY',
-          date: '2018-11-26',
-          tag: ['ScrollComponent', 'states'],
-          source: 'https://framer.cloud/vvVaY'-->
-    <div class="view-item">
-      <h3 class="title-sub">Framer Interactions</h3>
-      <ul class="list-item">
-        <li>
-          <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url(src/origin/assets/images/move.gif)"></span>
-                    <span class="box-photo" style="background-image:url(src/origin/assets/images/photo.jpg)"></span>
-                  </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">States</span>
-          <strong class="title-item">View Screen</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
-          <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url(src/origin/assets/images/move.gif)"></span>
-                    <span class="box-photo" style="background-image:url(src/origin/assets/images/photo.jpg)"></span>
-                  </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">States</span>
-          <strong class="title-item">View Screen</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
-          <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url(src/origin/assets/images/move.gif)"></span>
-                    <span class="box-photo" style="background-image:url(src/origin/assets/images/photo.jpg)"></span>
-                  </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">States</span>
-          <strong class="title-item">View Screen</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
-          <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url(src/origin/assets/images/move.gif)"></span>
-                    <span class="box-photo" style="background-image:url(src/origin/assets/images/photo.jpg)"></span>
-                  </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">States</span>
-          <strong class="title-item">View Screen</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
-          <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#none" class="link-thumb">
-                  <span class="bg-phone">
-                    <span class="box-gif" style="background-image:url(src/origin/assets/images/move.gif)"></span>
-                    <span class="box-photo" style="background-image:url(src/origin/assets/images/photo.jpg)"></span>
-                  </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">States</span>
-          <strong class="title-item">View Screen</strong>
-          <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
-          <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
-          <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
-          <ul class="wrap-tag">
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
-            </li>
-            <li>
-              <a href="#none" class="link-tag">randomChoice</a>
+            <li v-for="tags in framer.tag" :key="tags">
+              <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
         </li>
