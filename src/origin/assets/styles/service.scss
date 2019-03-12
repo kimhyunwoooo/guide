@@ -337,7 +337,7 @@ $nav-height: 240;
 .view-tab {
   position:relative;
   width:400px;
-  margin:63px auto 90px;
+  margin:63px auto 65px;
   .bar_menu {
     position:absolute;
     top:31px;
@@ -398,6 +398,9 @@ $nav-height: 240;
 
 
 // 목록 리스트
+.view-item {
+  padding-top:25px;
+}
 .title-sub {
   margin-bottom:40px;
   @include head-lv2;
@@ -406,7 +409,6 @@ $nav-height: 240;
   width:1040px;
   font-size:0;
   line-height:0;
-  padding-bottom:25px;
   > li {
     position:relative;
     display:inline-block;

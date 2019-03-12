@@ -9,9 +9,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import Routes from './routes'
+const VueScrollTo = require('vue-scrollto')
 
 Vue.use(VueRouter);
-
+Vue.use(VueScrollTo);
 const router = new VueRouter({
   routes : Routes
 })
@@ -66,3 +67,15 @@ searchBoxInp.addEventListener('focus', function(event){
   searchBoxInp.setAttribute('placeholder','');
   this.parentNode.classList.add('on-focus')
 });
+
+
+//메뉴
+let navGroup = document.querySelectorAll('a.link-nav')
+for (let i = 0; i < navGroup.length; i++){
+  navGroup[i].addEventListener("click",function (e) {
+    for (let j = 0; j < navGroup.length; j++){
+      navGroup[j].parentNode.classList.remove('on');
+    }
+    this.parentNode.classList.add('on')
+  })
+}

@@ -33,7 +33,7 @@
         </div>
       </div>
       <a href="#none" class="link-close">
-        <img src="../images/ic-back@2x.png" alt="닫기">
+        <img src="https://kimhyunwoooo.github.io/guide/images/ic-back@2x.png" alt="닫기">
       </a>
     </div>
   </div>
