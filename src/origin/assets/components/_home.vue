@@ -24,9 +24,9 @@
         <li v-for="(framer, index) in framerItem" :key="index">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/docs/assets/images/' + framer.gifImg + ')' }">
+              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + framer.gifImg + ')' }">
               </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/docs/assets/images/' + framer.jpgImg + ')' }">
+              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + framer.jpgImg + ')' }">
               </span>
             </span>
             <span class="box-thumb"></span>

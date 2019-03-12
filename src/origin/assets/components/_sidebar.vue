@@ -1,7 +1,7 @@
 <template>
   <div class="section-sidebar" v-bind:class="{side__close:toggleBar}">
     <h1 class="title-logo">
-      <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
+      <img src="https://kimhyunwoooo.github.io/guide/images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
     </h1>
     <button type="button" class="btn-fold" v-on:click="toggleBar = !toggleBar"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">

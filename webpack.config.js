@@ -97,33 +97,8 @@ module.exports = env => {
             {
               loader: 'file-loader',
               options: {
-                emitFile: true,
-                outputPath: (url, resourcePath, context) => {
-                  console.log('[file-loader]', resourcePath.slice(resourcePath.indexOf('assets'), resourcePath.length));
-
-                  return resourcePath.slice(resourcePath.indexOf('assets'), resourcePath.length);
-                },
+                emitFile: false,
                 name: '[name].[ext]',
-              }
-            },
-            {
-              loader: 'image-webpack-loader',		// image-optimize(상세 값은 추후적용)
-              options: {
-                disable: (!isProd),
-                mozjpeg: {		// https://github.com/imagemin/imagemin-mozjpeg
-                  progressive: true,	// progressive 사용 여부 논의(저해상도 우선 출력 되는 방식)
-                  quality: 70
-                },
-                optipng: {		// https://github.com/imagemin/imagemin-optipng
-                  enabled: true,
-                },
-                pngquant: {		// https://github.com/imagemin/imagemin-pngquant
-                  quality: '65-90',
-                  speed: 4
-                },
-                gifsicle: {		// https://github.com/imagemin/imagemin-gifsicle
-                  interlaced: false,
-                }
               }
             }
           ],

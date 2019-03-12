@@ -162,7 +162,7 @@ $nav-height: 240;
     .btn-fold {
       background:$primary;
       .icon-fold {
-        background:url('../images/ic-menu@2x.png') no-repeat;
+        background:url('https://kimhyunwoooo.github.io/guide/images/ic-menu@2x.png') no-repeat;
         background-size:24px;
       }
     }
@@ -206,7 +206,7 @@ $nav-height: 240;
       display:block;
       width:24px;
       height:24px;
-      background:url('../images/ic-menu-off@2x.png') no-repeat;
+      background:url('https://kimhyunwoooo.github.io/guide/images/ic-menu-off@2x.png') no-repeat;
       background-size:24px;
       @include ir-pm;
     }
@@ -246,7 +246,7 @@ $nav-height: 240;
   width:$width;
   height:$height;
   margin-right:2px;
-  background:url('../images/ic-sort-' + $image + '@2x.png');
+  background:url('https://kimhyunwoooo.github.io/guide/images/ic-sort-' + $image + '@2x.png');
   background-size:$width $height;
   vertical-align:top;
 };
@@ -426,7 +426,7 @@ $nav-height: 240;
     left:0;
     width:190px;
     height:397px;
-    background:url('../images/body@3x.png') no-repeat;
+    background:url('https://kimhyunwoooo.github.io/guide/images/body@3x.png') no-repeat;
     background-size:190px 397px;
     .box-gif,.box-photo {
       position:absolute;
@@ -776,7 +776,7 @@ $view-size__height:210px;
         height:743px;
         padding-top:85px;
         box-sizing:border-box;
-        background:url('../images/body@3x.png') no-repeat;
+        background:url('https://kimhyunwoooo.github.io/guide/images/body@3x.png') no-repeat;
         background-position:50% 0;
         background-size:355px 743px;
       }

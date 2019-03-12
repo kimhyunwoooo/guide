@@ -31,20 +31,20 @@ $tool-icon :
       width:$iconSize;
       height:$iconSize;
       margin-right:13px;
-      background-image:url('../images/ic-left-' + $iconName + '-off@2x.png');
+      background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-off@2x.png');
       background-size:$iconSize $iconSize;
       background-repeat:no-repeat;
       vertical-align:top;
     }
     .link-nav:hover {
       .icon-#{$iconName} {
-        background-image:url('../images/ic-left-' + $iconName + '-on@2x.png');
+        background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-on@2x.png');
       }
     }
     .on {
       .link-nav {
         .icon-#{$iconName} {
-          background-image: url('../images/ic-left-' + $iconName + '-active@2x.png');
+          background-image: url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-active@2x.png');
         }
       }
     }
@@ -58,7 +58,7 @@ $tool-icon :
     width:$toolSize;
     height:$toolSize;
     margin-right:21px;
-    background-image:url('../images/ic-' + $toolName + '@2x.png');
+    background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-' + $toolName + '@2x.png');
     background-size:$toolSize $toolSize;
     background-repeat:no-repeat;
     vertical-align:top;
