@@ -14,7 +14,7 @@
         </a>
       </li>
     </ul>
-    <div class="box-search">
+    <div class="box-search" v-bind:class="{ on_focus: isFocus }">
       <span class="icon-search"></span>
       <input type="text" id="searchInp" class="input-search" placeholder="Search Script" v-model="searchItem">
     </div>

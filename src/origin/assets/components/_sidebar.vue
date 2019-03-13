@@ -97,40 +97,40 @@
       <h2 class="title-nav">tools</h2>
       <ul class="nav-tools">
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#framer'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#framer'">
             <span class="icon-framer"></span>
             <strong class="title-cate">Framer</strong>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#framerx'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#framerx'">
             <span class="icon-framerx"></span>
             <strong class="title-cate">Framer X</strong>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#lottie'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#lottie'">
             <span class="icon-lottie"></span>
             <strong class="title-cate">Lottie</strong>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#principle'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#principle'">
             <span class="icon-principle"></span>
             <strong class="title-cate">Principle</strong>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#sketch'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#sketch'">
             <span class="icon-sketch"></span>
             <strong class="title-cate">Sketch</strong>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#none" class="link-nav" v-scroll-to="'#html'">
+          <router-link to="/home" class="link-nav" v-scroll-to="'#html'">
             <span class="icon-HTML"></span>
             <strong class="title-cate">HTML</strong>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>

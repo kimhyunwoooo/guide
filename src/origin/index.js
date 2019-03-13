@@ -53,6 +53,13 @@ for (let i = 0; i < tabItem.length; i++){
     targetBar.style.width = targetWidth + 'px';
   })
 }
+let homeIndex = document.querySelectorAll('.section-sidebar .link-nav');
+for (let i = 0; i < homeIndex.length; i++){
+  homeIndex[i].addEventListener("click",function (e) {
+    targetBar.style.left = '59px';
+    targetBar.style.width ='51px';
+  })
+}
 
 //검색창 이벤트
 let searchBoxInp = document.getElementById('searchInp');
