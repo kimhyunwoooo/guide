@@ -405,11 +405,16 @@ $nav-height: 240;
   margin-bottom:40px;
   @include head-lv2;
 }
+.list-item .title-sub:first-child:last-child {
+  .none-text {
+    display:block;
+  }
+}
 .list-item {
   width:1040px;
   font-size:0;
   line-height:0;
-  > li {
+  > .item {
     position:relative;
     display:inline-block;
     width:514px;
@@ -421,6 +426,11 @@ $nav-height: 240;
     font-size:11px;
     line-height:1.27;
     vertical-align:top;
+  }
+  .none-text {
+    display:none;
+    padding:40px 0 0 20px;
+    @include head-lv3;
   }
   .bg-phone{
     position:absolute;
@@ -515,7 +525,7 @@ $nav-height: 240;
 $view-size__width:230px;
 $view-size__height:210px;
 .list-view__mockup {
-  .list-item > li {
+  .list-item > .item {
     width:230px;
     height:330px;
     padding:0;

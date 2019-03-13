@@ -62,7 +62,7 @@ for (let i = 0; i < homeIndex.length; i++){
 }
 
 //검색창 이벤트
-let searchBoxInp = document.getElementById('searchInp');
+/*let searchBoxInp = document.getElementById('searchInp');
 searchBoxInp.addEventListener('blur', function(event){
   let searchValue = searchBoxInp.value;
   if (searchValue=="" || searchValue==null) {
@@ -73,7 +73,7 @@ searchBoxInp.addEventListener('blur', function(event){
 searchBoxInp.addEventListener('focus', function(event){
   searchBoxInp.setAttribute('placeholder','');
   this.parentNode.classList.add('on-focus')
-});
+});*/
 
 
 //메뉴

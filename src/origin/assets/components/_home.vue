@@ -14,15 +14,15 @@
         </a>
       </li>
     </ul>
-    <div class="box-search" v-bind:class="{ on_focus: isFocus }">
+    <div class="box-search" v-bind:class="{ 'on-focus': isFocus }">
       <span class="icon-search"></span>
-      <input type="text" id="searchInp" class="input-search" placeholder="Search Script" v-model="searchItem">
+      <input type="text" id="searchInp" class="input-search" v-on:focus="isFocus = onFocus()" v-on:blur="isFocus = onBlur()" placeholder="Search Script" v-model="searchItem">
     </div>
     <!-- Framer 영역 -->
     <div class="view-item" data-tool="framer" id="framer">
-      <h3 class="title-sub">Framer Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">Framer Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -43,14 +43,14 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- FramerX 영역 -->
     <div class="view-item" data-tool="framerX" id="framerx">
-      <h3 class="title-sub">FramerX Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">FramerX Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -71,14 +71,14 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- Lottie 영역 -->
     <div class="view-item" data-tool="lottie" id="lottie">
-      <h3 class="title-sub">Lottie Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">Lottie Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -99,14 +99,14 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- Principle 영역 -->
     <div class="view-item" data-tool="principle" id="principle">
-      <h3 class="title-sub">Principle Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">Principle Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -127,14 +127,14 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- sketch 영역 -->
     <div class="view-item" data-tool="sketch" id="sketch">
-      <h3 class="title-sub">Sketch Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">Sketch Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -155,14 +155,14 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <!-- html 영역 -->
     <div class="view-item" data-tool="html" id="html">
-      <h3 class="title-sub">HTML Interactions</h3>
-      <ul class="list-item">
-        <li v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem)">
+      <div class="list-item">
+        <h3 class="title-sub">HTML Interactions<span class="none-text">목록이 없습니다.</span></h3>
+        <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem)">
           <a href="#none" class="link-thumb">
             <span class="bg-phone">
               <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
@@ -183,8 +183,8 @@
               <a href="#none" class="link-tag">#{{ tags }}</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <detail-modal></detail-modal>
   </div>
@@ -205,12 +205,26 @@
           lottieItem : itemList.item.lottie,
           principleItem : itemList.item.principle,
           sketchItem : itemList.item.sketch,
-          htmlItem : itemList.item.html
-
+          htmlItem : itemList.item.html,
+          isFocus : false
         }
       },
       components: {
         'detail-modal' : detailModal
+      },
+      methods : {
+        onBlur : function(){
+          let searchBoxInp = document.getElementById('searchInp').value;
+          console.log(searchBoxInp);
+          if(searchBoxInp == ""|| searchBoxInp==null) {
+            return false
+          } else {
+            return true
+          }
+        },
+        onFocus :function(){
+          return true
+        }
       }
     }
 </script>
