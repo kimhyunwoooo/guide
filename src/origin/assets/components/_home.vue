@@ -40,7 +40,7 @@
           <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
           <ul class="wrap-tag">
             <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag">#{{ tags }}</a>
+              <a href="#none" class="link-tag"v-bind:value="tags" v-on:click="say(tags)">#{{ tags }}</a>
             </li>
           </ul>
         </div>
@@ -180,7 +180,7 @@
           <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
           <ul class="wrap-tag">
             <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag">#{{ tags }}</a>
+              <a href="#none" class="link-tag" >#{{ tags }}</a>
             </li>
           </ul>
         </div>
@@ -224,6 +224,11 @@
         },
         onFocus :function(){
           return true
+        },
+        say: function (message) {
+          alert(message)
+          //this.isFocus == true;
+          return this.searchItem = message
         }
       }
     }
