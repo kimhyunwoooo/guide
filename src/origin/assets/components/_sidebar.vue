@@ -134,19 +134,20 @@
         </li>
       </ul>
     </div>
-
     <div class="box-tag">
       <h2 class="title-tag">script Tag</h2>
       <ul class="nav-tag">
         <li v-for="tags in filteredTags()" :key="tags">
-          <a href="#none" class="link-tag">#{{ tags }}</a>
+          <a href="#none" class="link-tag" >#{{ tags }}</a>
         </li>
       </ul>
     </div>
   </div>
+
 </template>
 
 <script>
+  import { BUS } from '../js/eventBus'
   import itemList from '../data/itemList'
     export default {
       name: "side-bar",
@@ -154,7 +155,6 @@
         return {
           toggleBar: false,
           typeItem : itemList.typeList,
-
           toolItem : itemList.item,
           framerItem : itemList.item.framer,
           framerXItem : itemList.item.framerX,
@@ -163,6 +163,10 @@
           sketchItem : itemList.item.sketch,
           htmlItem : itemList.item.html,
         }
+      },
+      mounted() {
+        BUS.$emit('bus:call','tag1');
+        console.log(this)
       },
       methods: {
         filteredCount: function(e) {

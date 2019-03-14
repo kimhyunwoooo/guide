@@ -26,7 +26,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지111',
         url: 'https://framer.cloud/vvVaY111',
         date: '2018-11-26',
-        tag: ['ScrollC111omponent', 'state111s'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY111'
       }, {
         id: 5,
@@ -39,7 +39,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지222',
         url: 'https://framer.cloud/vvVaY222',
         date: '2018-11-26',
-        tag: ['ScrollCom222ponent', 'sta222tes'],
+        tag: ['tag3', 'tag2'],
         source: 'https://framer.cloud/vvVaY222'
       }, {
         id: 4,
@@ -52,7 +52,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지33',
         url: 'https://framer.cloud/vvVaY333',
         date: '2018-11-26',
-        tag: ['ScrollComp333onent', 'stat333es', 'asdf', '223523', 'asgasdbgs'],
+        tag: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
         source: 'https://framer.cloud/vvVaY333'
       }, {
         id: 3,
@@ -65,7 +65,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY444',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states','태그지롱'],
+        tag: ['tag1', 'tag2','태그지롱'],
         source: 'https://framer.cloud/vvVaY444'
       },
       {
@@ -79,7 +79,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag3'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 1,
@@ -92,7 +92,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       }
     ],
@@ -108,7 +108,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag4', 'tag5'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 5,
@@ -121,7 +121,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       }
     ],
@@ -137,7 +137,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag3', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 5,
@@ -163,7 +163,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag4', 'states'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 3,
@@ -176,7 +176,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       },
       {
@@ -190,7 +190,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag5', 'tag1'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 1,
@@ -203,7 +203,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag4'],
         source: 'https://framer.cloud/vvVaY'
       }
     ],
@@ -301,7 +301,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag3'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 5,
@@ -327,7 +327,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag2', 'tag1'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 3,
@@ -340,7 +340,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag5'],
         source: 'https://framer.cloud/vvVaY'
       },
       {
@@ -354,7 +354,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag4'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 1,
@@ -396,7 +396,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 4,
@@ -409,7 +409,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag4', 'tag1'],
         source: 'https://framer.cloud/vvVaY'
       }, {
         id: 3,
@@ -422,7 +422,7 @@ const itemList = {
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
+        tag: ['tag1', 'tag2'],
         source: 'https://framer.cloud/vvVaY'
       },
       {

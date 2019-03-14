@@ -506,7 +506,10 @@ $nav-height: 240;
   }
   .link-example {
     @include font-style-item(inline-block,10px,14px,$gray45,normal);
-    padding-bottom:13px;
+    margin-bottom:13px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .wrap-tag {
     display:block;
@@ -527,9 +530,30 @@ $view-size__height:210px;
 .list-view__mockup {
   .list-item > .item {
     width:230px;
-    height:330px;
+    height:350px;
     padding:0;
-    margin:0 30px 40px 0;
+    margin:0 30px 20px 0;
+    &:before {
+      position:absolute;
+      top:-10px;
+      bottom:-10px;
+      left:-10px;
+      right:-10px;
+      z-index:-1;
+      opacity:0;
+      border-radius:8px;
+      pointer-events:none;
+      background:rgba(0,20,61,.04);
+      content:'';
+      transform: scale(.96);
+      transition: background .1s;
+    }
+    &:hover {
+      &:before {
+        animation: hoverAnimation .25s cubic-bezier(.31,1,.34,1) forwards;
+      }
+    }
+
     .link-thumb {
       display:block;
       width:$view-size__width;

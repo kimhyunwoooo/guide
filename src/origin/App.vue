@@ -37,6 +37,7 @@ export default {
     return {
     }
   },
+
   components: {
     'side-bar' : sideBar
   }
