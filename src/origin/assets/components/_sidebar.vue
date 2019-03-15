@@ -165,8 +165,8 @@
         }
       },
       mounted() {
-        BUS.$emit('bus:call','tag1');
-        console.log(this)
+        BUS.$emit('bus:call','');
+        console.log(this);
       },
       methods: {
         filteredCount: function(e) {

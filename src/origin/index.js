@@ -23,7 +23,9 @@ new Vue({
   render: h => h(App),
   router : router
 });
-
+Vue.component('modal', {
+  template: '#modal-template'
+})
 
 // GNB Bar 애니메이션
 /*

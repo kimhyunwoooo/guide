@@ -1,191 +1,236 @@
 <template>
   <div id="pageHome" v-bind:class="[toggleView ? 'article-content list-view__mockup':'article-content']">
-    <ul class="list-type">
-      <li>
-        <a href="#none" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
-          <span class="icon-mockup"></span>
-          Mock up
-        </a>
-      </li>
-      <li>
-        <a href="#none" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
-          <span class="icon-imagelist"></span>
-          Image List
-        </a>
-      </li>
-    </ul>
-    <div id="boxSearch" class="box-search" v-bind:class="{ 'on-focus': isFocus }">
-      <span class="icon-search"></span>
-      <input type="text" id="searchInp" class="input-search" v-on:focus="isFocus = onFocus()" v-on:blur="isFocus = onBlur()" placeholder="Search Script" v-model="searchItem">
-    </div>
-    <!-- Framer 영역 -->
-    <div class="view-item" data-tool="framer" id="framer">
-      <div class="list-item">
-        <h3 class="title-sub">Framer Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
+    <div class="section-home" v-show="!showModal">
+      <ul class="list-type">
+        <li>
+          <a href="#none" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
+            <span class="icon-mockup"></span>
+            Mock up
           </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
+        </li>
+        <li>
+          <a href="#none" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
+            <span class="icon-imagelist"></span>
+            Image List
+          </a>
+        </li>
+      </ul>
+      <div id="boxSearch" class="box-search" v-bind:class="{ 'on-focus': isFocus }">
+        <span class="icon-search"></span>
+        <input type="text" id="searchInp" class="input-search" v-on:focus="isFocus = onFocus()" v-on:blur="isFocus = onBlur()" placeholder="Search Script" v-model="searchItem">
+      </div>
+      <!-- Framer 영역 -->
+      <div class="view-item" data-tool="framer" id="framer">
+        <div class="list-item">
+          <h3 class="title-sub">Framer Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FramerX 영역 -->
+      <div class="view-item" data-tool="framerX" id="framerx">
+        <div class="list-item">
+          <h3 class="title-sub">FramerX Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Lottie 영역 -->
+      <div class="view-item" data-tool="lottie" id="lottie">
+        <div class="list-item">
+          <h3 class="title-sub">Lottie Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Principle 영역 -->
+      <div class="view-item" data-tool="principle" id="principle">
+        <div class="list-item">
+          <h3 class="title-sub">Principle Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- sketch 영역 -->
+      <div class="view-item" data-tool="sketch" id="sketch">
+        <div class="list-item">
+          <h3 class="title-sub">Sketch Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- html 영역 -->
+      <div class="view-item" data-tool="html" id="html">
+        <div class="list-item">
+          <h3 class="title-sub">HTML Interactions<span class="none-text">목록이 없습니다.</span></h3>
+          <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
+            <a href="#none" class="link-thumb" v-on:click="modalFunc">
+              <span class="bg-phone">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                </span>
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                </span>
+              </span>
+              <span class="box-thumb"></span>
+              <span class="box-detail">VIEW MORE</span>
+            </a>
+            <span class="text-cate">{{ typeItem[tools.type] }}</span>
+            <strong class="title-item">{{ tools.title }}</strong>
+            <p class="text-desc">{{ tools.desc }}</p>
+            <p class="text-type">{{ tools.used }}</p>
+            <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
+            <ul class="wrap-tag">
+              <li v-for="tags in tools.tag" :key="tags">
+                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <!-- FramerX 영역 -->
-    <div class="view-item" data-tool="framerX" id="framerx">
-      <div class="list-item">
-        <h3 class="title-sub">FramerX Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
+    <script type="text/x-template" id="modal-template">
+      <div name="modal">
+        <div class="modal">
+          <div class="modal-cont">
+            <span class="text-cate">States</span>
+            <div class="title">
+              <strong class="title-item">View ScreenView</strong>
+              <ul class="wrap-tag">
+                <li>
+                  <a href="#none" class="link-tag">randomChoice</a>
+                </li>
+                <li>
+                  <a href="#none" class="link-tag">randomChoice</a>
+                </li>
+                <li>
+                  <a href="#none" class="link-tag">randomChoice</a>
+                </li>
+                <li>
+                  <a href="#none" class="link-tag">randomChoice</a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-desc">페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 페이지 스크롤시 </p>
+            <p class="text-type">활용 영역 : 상세페이지/읽기페이지</p>
+            <div class="detail-cont">
+              <div class="detail-phone">
+                <span class="bg-phone">
+                  <span class="box-gif" style="background-image:url(https://kimhyunwoooo.github.io/guide/images/move.gif)"></span>
+                </span>
+                <a href="#none" class="link-example" target="_blank">https://framer.cloud/vvVaY</a>
+              </div>
+              <div class="detail-code">
+                <iframe width="560px" height="1070"  scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=583&theme-id=0&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+              </div>
+            </div>
+            <a href="#none" class="link-close" v-on:click="$emit('close')">
+              <img src="https://kimhyunwoooo.github.io/guide/images/ic-back@2x.png" alt="닫기">
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Lottie 영역 -->
-    <div class="view-item" data-tool="lottie" id="lottie">
-      <div class="list-item">
-        <h3 class="title-sub">Lottie Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Principle 영역 -->
-    <div class="view-item" data-tool="principle" id="principle">
-      <div class="list-item">
-        <h3 class="title-sub">Principle Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- sketch 영역 -->
-    <div class="view-item" data-tool="sketch" id="sketch">
-      <div class="list-item">
-        <h3 class="title-sub">Sketch Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- html 영역 -->
-    <div class="view-item" data-tool="html" id="html">
-      <div class="list-item">
-        <h3 class="title-sub">HTML Interactions<span class="none-text">목록이 없습니다.</span></h3>
-        <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-          <a href="#none" class="link-thumb">
-            <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
-              </span>
-              <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
-              </span>
-            </span>
-            <span class="box-thumb"></span>
-            <span class="box-detail">VIEW MORE</span>
-          </a>
-          <span class="text-cate">{{ typeItem[tools.type] }}</span>
-          <strong class="title-item">{{ tools.title }}</strong>
-          <p class="text-desc">{{ tools.desc }}</p>
-          <p class="text-type">{{ tools.used }}</p>
-          <a href="#none" class="link-example" target="_blank">{{ tools.url }}</a>
-          <ul class="wrap-tag">
-            <li v-for="tags in tools.tag" :key="tags">
-              <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#boxSearch'">#{{ tags }}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </script>
+    <modal v-if="showModal" v-on:close="showModal = false"></modal>
     <detail-modal></detail-modal>
   </div>
 </template>
@@ -208,7 +253,8 @@
           sketchItem : itemList.item.sketch,
           htmlItem : itemList.item.html,
           isFocus : false,
-          text:''
+          text:'',
+          showModal: false
         }
       },
       components: {
@@ -235,6 +281,10 @@
         },
         searchTag: function (tagName) {
           return this.searchItem = tagName, this.isFocus = true
+        },
+        modalFunc : function(){
+          window.scrollTo(0,0);
+          return this.showModal = true;
         }
       }
     }
