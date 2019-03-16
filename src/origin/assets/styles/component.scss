@@ -133,6 +133,7 @@ $tool-icon :
     overflow:hidden;
     .title-item {
       @include head-lv1;
+      line-height:44px;
       display:inline-block;
       vertical-align:top;
       margin-right:10px;
@@ -140,7 +141,7 @@ $tool-icon :
     .wrap-tag {
       display:inline-block;
       vertical-align:top;
-      margin-top:7px;
+      margin-top:11px;
       > li {
         display:inline-block;
         vertical-align:top;
@@ -151,7 +152,7 @@ $tool-icon :
   .text-desc {
     word-break: keep-all;
     @include font-style-item(block,11px,14px,$gray80,normal);
-    margin-top:11px;
+    margin-top:7px;
   }
   .text-type {
     @include font-style-item(block,11px,14px,$gray40,normal);
@@ -185,13 +186,17 @@ $tool-icon :
       }
     }
     .detail-code {
-      float:right
+      float:right;
+      width:560px;
     }
     .link-example {
       margin-top:37px;
       text-align:center;
       @include font-style-item(inline-block,10px,14px,$gray45,normal);
       display:block;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .link-close {

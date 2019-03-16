@@ -19,54 +19,58 @@ const itemList = {
         id: 6,
         type: 2,
         tool: 6,
-        title: 'View Scre111en',
+        title: 'View Scre111en tag1',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
-        desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
+        desc: '111페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지111',
         url: 'https://framer.cloud/vvVaY111',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY111'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: 'View S222creen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
-        desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
+        desc: '222페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지222',
         url: 'https://framer.cloud/vvVaY222',
         date: '2018-11-26',
-        tag: ['tag3', 'tag2'],
-        source: 'https://framer.cloud/vvVaY222'
+        tag: ['#tag3', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 4,
         type: 5,
         tool: 1,
         title: 'View 333Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
-        desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
+        desc: '333페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지33',
         url: 'https://framer.cloud/vvVaY333',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5'],
-        source: 'https://framer.cloud/vvVaY333'
+        tag: ['#tag1', '#tag2', '#tag3', '#tag4', '#tag5'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 3,
         type: 1,
         tool: 1,
         title: 'Vi444ew Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
-        desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
+        desc: '444페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY444',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2','태그지롱'],
-        source: 'https://framer.cloud/vvVaY444'
+        tag: ['#tag1', '#tag2','#태그지롱'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -74,26 +78,28 @@ const itemList = {
         tool: 1,
         title: 'View Scree555n',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag3'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag3'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     framerX: [
@@ -103,26 +109,28 @@ const itemList = {
         tool: 7,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag4', 'tag5'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag4', '#tag5'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: '111View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     lottie: [
@@ -132,52 +140,56 @@ const itemList = {
         tool: 1,
         title: '로티View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag3', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag3', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 4,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag4', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag4', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 3,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -185,26 +197,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag5', 'tag1'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag5', '#tag1'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag4'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag4'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     principle: [
@@ -214,52 +228,56 @@ const itemList = {
         tool: 1,
         title: '프린서플iew Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 4,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 3,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -267,26 +285,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     sketch: [
@@ -296,52 +316,56 @@ const itemList = {
         tool: 1,
         title: '스케치View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag3'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag3'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 4,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag2', 'tag1'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag2', '#tag1'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 3,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag5'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag5'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -349,26 +373,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag4'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag4'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ],
     html: [
@@ -378,52 +404,56 @@ const itemList = {
         tool: 1,
         title: 'HTMLView Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 5,
         type: 3,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 4,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag4', 'tag1'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag4', '#tag1'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 3,
         type: 1,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['tag1', 'tag2'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#tag1', '#tag2'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -431,26 +461,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -458,26 +490,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       },
       {
         id: 2,
@@ -485,26 +519,28 @@ const itemList = {
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }, {
         id: 1,
         type: 5,
         tool: 1,
         title: 'View Screen',
         jpgImg: 'photo.jpg',
+        jpgImg_s: 'photo_s.jpg',
         gifImg: 'move.gif',
         desc: '페이지 스크롤시 배경 이미지의 사이즈 애니메이션을 통한 연결성있는 애니메이션을 구현하여 사용자에게 명확한 피드백을 제공한다',
         used: '활용영역 : 상세페이지/읽기페이지',
         url: 'https://framer.cloud/vvVaY',
         date: '2018-11-26',
-        tag: ['ScrollComponent', 'states'],
-        source: 'https://framer.cloud/vvVaY'
+        tag: ['#ScrollComponent', '#states'],
+        source: '<iframe height="1050" style="width: 100%;" scrolling="no" title="yEKvxZ" src="//codepen.io/diget/embed/yEKvxZ/?height=265&theme-id=0&default-tab=css" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>'
       }
     ]
   }

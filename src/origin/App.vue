@@ -9,7 +9,7 @@
         </div>
         <ul class="list-tab">
           <li>
-            <router-link to="/home" class="link-tab" data-position="59" data-width="51" >Home</router-link>
+            <router-link to="/home" class="link-tab" data-position="59" data-width="51">Home</router-link>
           </li>
           <li>
             <router-link to="/about" class="link-tab" data-position="136" data-width="50">about</router-link>

@@ -27,24 +27,10 @@ Vue.component('modal', {
   template: '#modal-template'
 })
 
-// GNB Bar 애니메이션
-/*
-$('.list-tab>li').on('mouseenter', function() {
-  var menuIndex = $(this).index();
-  var menuNum = $('.list-tab>li:eq('+menuIndex+') .link-tab');
-  var menuWid = parseInt( menuNum.outerWidth() );
-  var menuPos = parseInt( menuNum.position().left);
-  $('.bar_menu').stop().animate({
-    left : menuPos + parseInt((menuWid/2))
-  },200);
-  $('.inner_bar').stop().animate({
-    width : menuWid+3,
-    marginLeft : -(menuWid/2)
-  },400);
-});
-*/
+let location = window.location.href;
+console.log(location)
 
-
+//텝메뉴 이벤트
 let tabItem = document.querySelectorAll('.list-tab>li .link-tab');
 let targetBar = document.getElementById('tabBar')
 for (let i = 0; i < tabItem.length; i++){
@@ -55,7 +41,7 @@ for (let i = 0; i < tabItem.length; i++){
     targetBar.style.width = targetWidth + 'px';
   })
 }
-let homeIndex = document.querySelectorAll('.section-sidebar .link-nav');
+let homeIndex = document.querySelectorAll('.section-sidebar .link-nav,.section-sidebar .link-tag');
 for (let i = 0; i < homeIndex.length; i++){
   homeIndex[i].addEventListener("click",function (e) {
     targetBar.style.left = '59px';
@@ -63,23 +49,8 @@ for (let i = 0; i < homeIndex.length; i++){
   })
 }
 
-//검색창 이벤트
-/*let searchBoxInp = document.getElementById('searchInp');
-searchBoxInp.addEventListener('blur', function(event){
-  let searchValue = searchBoxInp.value;
-  if (searchValue=="" || searchValue==null) {
-    searchBoxInp.setAttribute('placeholder','Search Script');
-    this.parentNode.classList.remove('on-focus')
-  }
-});
-searchBoxInp.addEventListener('focus', function(event){
-  searchBoxInp.setAttribute('placeholder','');
-  this.parentNode.classList.add('on-focus')
-});*/
-
-
-//메뉴
-let navGroup = document.querySelectorAll('a.link-nav')
+//사이드 메뉴
+let navGroup = document.querySelectorAll('.nav-wrap .link-nav')
 for (let i = 0; i < navGroup.length; i++){
   navGroup[i].addEventListener("click",function (e) {
     for (let j = 0; j < navGroup.length; j++){
