@@ -27,9 +27,6 @@ Vue.component('modal', {
   template: '#modal-template'
 })
 
-let location = window.location.href;
-console.log(location)
-
 //텝메뉴 이벤트
 let tabItem = document.querySelectorAll('.list-tab>li .link-tab');
 let targetBar = document.getElementById('tabBar')

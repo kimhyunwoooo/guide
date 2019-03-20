@@ -1,7 +1,7 @@
 <template>
   <div class="section-sidebar" v-bind:class="{side__close:toggleBar}">
     <h1 class="title-logo">
-      <img src="https://kimhyunwoooo.github.io/guide/images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
+      <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
     </h1>
     <button type="button" class="btn-fold" v-on:click="toggleBar = !toggleBar"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">
@@ -10,7 +10,7 @@
         <li class="on">
           <div class="link-nav" v-on:click="selCate(filterCate(0))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-all"></span>
+              <span class="nav-icon icon-all"></span>
               <strong class="title-cate">All</strong>
               <span class="count-cate">({{ filteredCount(0).length }})</span>
             </router-link>
@@ -19,7 +19,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(1))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-states"></span>
+              <span class="nav-icon icon-states"></span>
               <strong class="title-cate">States</strong>
               <span class="count-cate">({{ filteredCount(1).length }})</span>
             </router-link>
@@ -28,7 +28,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(2))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-scroll"></span>
+              <span class="nav-icon icon-scroll"></span>
               <strong class="title-cate">Scroll</strong>
               <span class="count-cate">({{ filteredCount(2).length }})</span>
             </router-link>
@@ -37,7 +37,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(3))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-splash"></span>
+              <span class="nav-icon icon-splash"></span>
               <strong class="title-cate">Splash</strong>
               <span class="count-cate">({{ filteredCount(3).length }})</span>
             </router-link>
@@ -46,7 +46,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(4))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-page"></span>
+              <span class="nav-icon icon-page"></span>
               <strong class="title-cate">Page</strong>
               <span class="count-cate">({{ filteredCount(4).length }})</span>
             </router-link>
@@ -55,7 +55,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(5))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-flow"></span>
+              <span class="nav-icon icon-flow"></span>
               <strong class="title-cate">Flow</strong>
               <span class="count-cate">({{ filteredCount(5).length }})</span>
             </router-link>
@@ -64,7 +64,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(6))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-banner"></span>
+              <span class="nav-icon icon-banner"></span>
               <strong class="title-cate">Banner</strong>
               <span class="count-cate">({{ filteredCount(6).length }})</span>
             </router-link>
@@ -73,7 +73,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(7))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-animation"></span>
+              <span class="nav-icon icon-animation"></span>
               <strong class="title-cate">Animation</strong>
               <span class="count-cate">({{ filteredCount(7).length }})</span>
             </router-link>
@@ -82,7 +82,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(8))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-component"></span>
+              <span class="nav-icon icon-component"></span>
               <strong class="title-cate">UI Component</strong>
               <span class="count-cate">({{ filteredCount(8).length }})</span>
             </router-link>
@@ -91,7 +91,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(9))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-navigation"></span>
+              <span class="nav-icon icon-navigation"></span>
               <strong class="title-cate">Menu Navigation</strong>
               <span class="count-cate">({{ filteredCount(9).length }})</span>
             </router-link>
@@ -100,7 +100,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(10))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-reference"></span>
+              <span class="nav-icon icon-reference"></span>
               <strong class="title-cate">Reference</strong>
               <span class="count-cate">({{ filteredCount(10).length }})</span>
             </router-link>
@@ -109,7 +109,7 @@
         <li>
           <div class="link-nav" v-on:click="selCate(filterCate(11))" v-scroll-to="'#wrapContainer'">
             <router-link to="/home">
-              <span class="icon-etc"></span>
+              <span class="nav-icon icon-etc"></span>
               <strong class="title-cate">ETC</strong>
               <span class="count-cate">({{ filteredCount(11).length }})</span>
             </router-link>
@@ -122,37 +122,37 @@
       <ul class="nav-tools">
         <li v-on:click="selTools"  v-scroll-to="'#framer'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-framer"></span>
+            <span class="tools-icon framer"></span>
             <strong class="title-cate">Framer</strong>
           </router-link>
         </li>
         <li v-on:click="selTools"  v-scroll-to="'#framerx'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-framerx"></span>
+            <span class="tools-icon framerx"></span>
             <strong class="title-cate">Framer X</strong>
           </router-link>
         </li>
         <li v-on:click="selTools"  v-scroll-to="'#lottie'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-lottie"></span>
+            <span class="tools-icon lottie"></span>
             <strong class="title-cate">Lottie</strong>
           </router-link>
         </li>
         <li v-on:click="selTools"  v-scroll-to="'#principle'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-principle"></span>
+            <span class="tools-icon principle"></span>
             <strong class="title-cate">Principle</strong>
           </router-link>
         </li>
         <li v-on:click="selTools"  v-scroll-to="'#sketch'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-sketch"></span>
+            <span class="tools-icon sketch"></span>
             <strong class="title-cate">Sketch</strong>
           </router-link>
         </li>
         <li v-on:click="selTools"  v-scroll-to="'#html'">
           <router-link to="/home" class="link-nav">
-            <span class="icon-HTML"></span>
+            <span class="tools-icon HTML"></span>
             <strong class="title-cate">HTML</strong>
           </router-link>
         </li>
@@ -252,14 +252,4 @@
         }
       }
     }
-/*
-  filteredType() {
-    return this.filteredYear.filter((site) => {
-      if(this.selGame === 0){
-        return site;
-      }else{
-        return site.type == this.selGame
-      }
-    })
-  }*/
 </script>

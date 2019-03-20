@@ -23,7 +23,7 @@ const outputPaths = {
   images: path.resolve(rootPaths.output, 'assets/images')
 };
 // cdn paths
-const cdnPath = 'https://kimhyunwoooo.github.io/guide/docs/';
+const cdnPath = 'https://kimhyunwoooo.github.io/guide/docs/images/';
 
 // entry htmlList(htmlWebpackPlugin) - 루트 폴더 내 모든 *.html을 가져오도록 설정
 let entryHtmlFiles = (() => {
@@ -97,8 +97,29 @@ module.exports = env => {
             {
               loader: 'file-loader',
               options: {
-                emitFile: false,
+                emitFile: true,
+                outputPath: (url, resourcePath, context) => resourcePath.slice(resourcePath.indexOf('assets'), resourcePath.length),
                 name: '[name].[ext]',
+              }
+            },
+            {
+              loader: 'image-webpack-loader',		// image-optimize(상세 값은 추후적용)
+              options: {
+                disable: (!isProd),
+                mozjpeg: {		// https://github.com/imagemin/imagemin-mozjpeg
+                  progressive: true,	// progressive 사용 여부 논의(저해상도 우선 출력 되는 방식)
+                  quality: 70
+                },
+                optipng: {		// https://github.com/imagemin/imagemin-optipng
+                  enabled: true,
+                },
+                pngquant: {		// https://github.com/imagemin/imagemin-pngquant
+                  quality: '65-90',
+                  speed: 4
+                },
+                gifsicle: {		// https://github.com/imagemin/imagemin-gifsicle
+                  interlaced: false,
+                }
               }
             }
           ],

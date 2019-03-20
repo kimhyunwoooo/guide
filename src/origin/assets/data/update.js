@@ -1,5 +1,14 @@
 const update = {
   item: [
+/*
+    {
+      index : 인덱스 번호,
+      type : 툴 명,
+      text : 텍스트 내용,
+      date : 날짜,
+      newIcon : true/false
+    }
+*/
     {
       index : 1,
       type : 'framer',
@@ -8,31 +17,31 @@ const update = {
       newIcon : true
     },{
       index : 2,
-      type : 'framer',
+      type : 'framerx',
       text : '222이번엔 000이 업데이트 되었다옹옹',
       date : '2019-01-01',
       newIcon : true
     },{
       index :3,
-      type : 'framer',
+      type : 'lottie',
       text : '3333이번엔 000이 업데이트 되었다옹옹',
       date : '2019-01-01',
       newIcon : true
     },{
       index : 4,
-      type : 'framer',
+      type : 'principle',
       text : '444이번엔 000이 업데이트 되었다옹옹',
       date : '2019-01-01',
       newIcon : false
     },{
       index : 5,
-      type : 'framer',
+      type : 'sketch',
       text : '55이번엔 000이 업데이트 되었다옹옹',
       date : '2019-01-01',
       newIcon : false
     },{
       index : 6,
-      type : 'framer',
+      type : 'HTML',
       text : '66이번엔 000이 업데이트 되었다옹옹',
       date : '2019-01-01',
       newIcon : false

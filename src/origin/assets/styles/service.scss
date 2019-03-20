@@ -165,7 +165,7 @@ $nav-height: 240;
     .btn-fold {
       background:$primary;
       .icon-fold {
-        background:url('https://kimhyunwoooo.github.io/guide/images/ic-menu@2x.png') no-repeat;
+        background:url('../images/ic-menu@2x.png') no-repeat;
         background-size:24px;
       }
     }
@@ -209,7 +209,7 @@ $nav-height: 240;
       display:block;
       width:24px;
       height:24px;
-      background:url('https://kimhyunwoooo.github.io/guide/images/ic-menu-off@2x.png') no-repeat;
+      background:url('../images/ic-menu-off@2x.png') no-repeat;
       background-size:24px;
       @include ir-pm;
     }
@@ -239,15 +239,6 @@ $nav-height: 240;
 }
 
 //정렬 탭메뉴
-@mixin icon-type($width,$height,$image){
-  display:inline-block;
-  width:$width;
-  height:$height;
-  margin-right:2px;
-  background:url('https://kimhyunwoooo.github.io/guide/images/ic-sort-' + $image + '@2x.png');
-  background-size:$width $height;
-  vertical-align:top;
-};
 .list-type{
   overflow:hidden;
   width:205px;
@@ -269,15 +260,20 @@ $nav-height: 240;
     &:hover,&.link-type__on{
       opacity:1;
     }
-    &:active {
-      @include activeBtn;
+    >span {
+      display:inline-block;
+      margin-right:2px;
+      width:16px;
+      height:16px;
+      vertical-align:top;
+      background-size:16px 16px;
     }
   }
   .icon-mockup {
-    @include icon-type(16px,16px,mockup);
+    background:url('../images/ic-sort-mockup@2x.png');
   }
   .icon-imagelist {
-    @include icon-type(16px,16px,list);
+    background:url('../images/ic-sort-list@2x.png');
   }
 }
 
@@ -296,9 +292,11 @@ $nav-height: 240;
     position:absolute;
     top:3px;
     left:7px;
-    @include icon-type(16px,16px,search);
+    width:16px;
+    height:16px;
+    background:url('../images/search-icon.png');
+    background-size:40px 20px;
     margin-right:0;
-    transition:.2s;
   }
   .input-search {
     display:block;
@@ -321,7 +319,7 @@ $nav-height: 240;
     .icon-search {
       left:initial;
       right:0;
-     @include icon-type(16px,16px,search-focus);
+      background-position:-20px 0;
     }
     .input-search {
       font-weight:bold;
@@ -336,7 +334,7 @@ $nav-height: 240;
     overflow:hidden;
     position:absolute;
     top:0;
-    right:0;
+    right:20px;
     width:24px;
     height:24px;
     background:red;
@@ -403,9 +401,6 @@ $nav-height: 240;
            opacity:.15;
          }
        }
-      &:active {
-        @include activeBtn;
-      }
     }
   }
 }
@@ -456,7 +451,7 @@ $nav-height: 240;
     left:0;
     width:190px;
     height:397px;
-    background:url('https://kimhyunwoooo.github.io/guide/images/body@3x.png') no-repeat;
+    background:url('../images/body@3x.png') no-repeat;
     background-size:190px 397px;
     .box-gif,.box-photo {
       position:absolute;
@@ -676,7 +671,7 @@ $view-size__height:210px;
       >img {
         display:block;
         vertical-align: top;
-        widht:24px;
+        width:24px;
         height:24px;
       }
       .icon-new {

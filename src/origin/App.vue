@@ -30,14 +30,11 @@
 <script>
 
 import sideBar from '../origin/assets/components/_sidebar.vue'
-
-
 export default {
   data: function () {
     return {
     }
   },
-
   components: {
     'side-bar' : sideBar
   }

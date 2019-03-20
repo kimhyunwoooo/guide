@@ -27,12 +27,12 @@
           <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -55,12 +55,12 @@
           <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -83,12 +83,12 @@
           <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -111,12 +111,12 @@
           <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -139,12 +139,12 @@
           <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -167,12 +167,12 @@
           <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
             <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
-                <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.gifImg + ')' }">
+                <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
-                <span class="box-photo" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg + ')' }">
+                <span class="box-photo" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg + ')' }">
                 </span>
               </span>
-              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + tools.jpgImg_s + ')' }"></span>
+              <span class="box-thumb" v-bind:style="{ 'background-image': 'url(' + tools.jpgImg_s + ')' }"></span>
               <span class="box-detail">VIEW MORE</span>
             </a>
             <span class="text-cate">{{ typeItem[tools.type] }}</span>
@@ -205,14 +205,14 @@
         <div class="detail-cont">
           <div class="detail-phone">
             <span class="bg-phone">
-              <span class="box-gif" v-bind:style="{ 'background-image': 'url(https://kimhyunwoooo.github.io/guide/images/' + modalImg + ')' }"></span>
+              <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + modalImg + ')' }"></span>
             </span>
             <a v-bind:href="modalUrl" class="link-example" target="_blank">{{ modalUrl }}</a>
           </div>
           <div class="detail-code" v-html="modalSource"></div>
         </div>
         <a href="#none" class="link-close" v-on:click="modalClose">
-          <img src="https://kimhyunwoooo.github.io/guide/images/ic-back@2x.png" alt="닫기">
+          <img src="../images/ic-back@2x.png" alt="닫기">
         </a>
       </div>
     </div>

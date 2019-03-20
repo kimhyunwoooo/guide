@@ -1,50 +1,54 @@
 
 //메뉴 아이콘
 $nav-icon :
-    (all,25px),
-    (animation,25px),
-    (banner,25px),
-    (etc,25px),
-    (flow,25px),
-    (navigation,25px),
-    (page,25px),
-    (reference,25px),
-    (scroll,25px),
-    (splash,25px),
-    (states,25px),
-    (component,25px);
+    (all,0,0),
+    (states,0,-30),
+    (scroll,0,-60),
+    (splash,0,-90),
+    (page,0,-120),
+    (flow,0,-150),
+    (banner,0,-180),
+    (animation,0,-210),
+    (component,0,-240),
+    (navigation,0,-270),
+    (reference,0,-300),
+    (etc,0,-330);
 //메뉴 아이콘
 $tool-icon :
-    (framer,24px),
-    (framerx,24px),
-    (lottie,24px),
-    (principle,24px),
-    (sketch,24px),
-    (HTML,24px);
+    (framer,0,0),
+    (framerx,0,-30),
+    (lottie,0,-60),
+    (principle,0,-90),
+    (sketch,0,-120),
+    (HTML,0,-150);
 
 
 /* 메뉴 */
-@each $iconName,$iconSize in $nav-icon {
+.nav-wrap {
+  .nav-icon {
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-right:13px;
+    background:url('../images/nav-comm.png') no-repeat;
+    background-size:85px 355px;
+    vertical-align:top;
+  }
+}
+@each $iconName,$iconPositionX,$iconPositionY in $nav-icon {
   .nav-wrap {
     .icon-#{$iconName} {
-      display:inline-block;
-      width:$iconSize;
-      height:$iconSize;
-      margin-right:13px;
-      background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-off@2x.png');
-      background-size:$iconSize $iconSize;
-      background-repeat:no-repeat;
-      vertical-align:top;
+      background-position:$iconPositionX+px $iconPositionY+px ;
     }
     .link-nav:hover {
       .icon-#{$iconName} {
-        background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-on@2x.png');
+        background-position:($iconPositionX - 30)+px $iconPositionY + px;
       }
     }
     .on {
       .link-nav {
         .icon-#{$iconName} {
-          background-image: url('https://kimhyunwoooo.github.io/guide/images/ic-left-' + $iconName + '-active@2x.png');
+          background-position:-($iconPositionX+60)+px $iconPositionY + px;
         }
       }
     }
@@ -52,18 +56,22 @@ $tool-icon :
 }
 
 //tool 메뉴
-@each $toolName,$toolSize in $tool-icon {
-  .icon-#{$toolName} {
-    display:inline-block;
-    width:$toolSize;
-    height:$toolSize;
-    margin-right:21px;
-    background-image:url('https://kimhyunwoooo.github.io/guide/images/ic-' + $toolName + '@2x.png');
-    background-size:$toolSize $toolSize;
-    background-repeat:no-repeat;
-    vertical-align:top;
+.tools-icon {
+  display:inline-block;
+  width:24px;
+  height:24px;
+  margin-right:21px;
+  background:url('../images/tool-comm.png') no-repeat;
+  background-size:25px 175px;
+  vertical-align:top;
+}
+
+@each $toolName,$toolPositionX,$toolPositionY in $tool-icon {
+  .#{$toolName} {
+    background-position:$toolPositionX+px $toolPositionY+px ;
   }
 }
+
 
 
 
@@ -171,7 +179,7 @@ $tool-icon :
         height:743px;
         padding-top:85px;
         box-sizing:border-box;
-        background:url('https://kimhyunwoooo.github.io/guide/images/body@3x.png') no-repeat;
+        background:url('../images/body@3x.png') no-repeat;
         background-position:50% 0;
         background-size:355px 743px;
       }

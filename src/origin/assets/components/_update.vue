@@ -7,7 +7,7 @@
         <li v-for="(update, index) in updateItem" :key="index">
           <div class="head-list">
             <span class="icon-new" v-if="update.newIcon">NEW</span>
-            <img :src="'https://kimhyunwoooo.github.io/guide/images/ic-'+update.type+'@2x.png'" width="24" height="24" alt="">
+            <span class="tools-icon" v-bind:class="update.type"></span>
           </div>
           <div class="body-list">
             <strong class="title-update">{{ update.text }}</strong>
