@@ -40,7 +40,7 @@ $gray20 : #eee;
   @include font-style(12px,16px,normal,$gray40,0)
 }
 @mixin text-body {
-  @include font-style(11px,1px,normal,$gray80,0)
+  @include font-style(11px,14px,normal,$gray80,0)
 }
 @mixin text-caption {
   @include font-style(10px,14px,normal,$gray45,0)
