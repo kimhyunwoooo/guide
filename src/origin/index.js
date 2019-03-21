@@ -56,3 +56,16 @@ for (let i = 0; i < navGroup.length; i++){
     this.parentNode.classList.add('on')
   })
 }
+
+let sideBar = document.querySelector('.section-sidebar');
+sideBarFunc();
+window.addEventListener('resize',sideBarFunc);
+function sideBarFunc(){
+  let documentWidth = window.innerWidth;
+  console.log(documentWidth);
+  if(documentWidth < 1200 ) {
+    sideBar.classList.add('side__close')
+  } else {
+    sideBar.classList.remove( 'side__close' );
+  };
+}

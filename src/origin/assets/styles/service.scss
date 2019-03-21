@@ -131,7 +131,7 @@ $nav-height: 240;
   top:0;
   left:0;
   bottom:0;
-  z-index:9999;
+  z-index:99999;
   width:$nav-height + px;
   padding:75px 0 80px 40px;
   box-sizing:border-box;
@@ -227,9 +227,9 @@ $nav-height: 240;
   }
   .article-content {
     position:relative;
-    max-width:1040px;
+    width:1040px;
     margin:0 auto;
-    padding:0 69px;
+    padding:0 50px 0 80px;
   }
 }
 #pageUpdate,#pageAbout,#pageDocs,.view-item,.box-search {
@@ -245,6 +245,7 @@ $nav-height: 240;
   position:absolute;
   top:-98px;
   right:78px;
+  z-index:9999;
   li {
     float:left;
     margin-right:14px;
@@ -344,13 +345,18 @@ $nav-height: 240;
 
 
 // 본문 탭메뉴
-.view-tab {
+.wrap_tab {
   position:absolute;
   top:63px;
-  left:50%;
-  z-index:9999;
+  left:0;
+  z-indeX:9999;
+  width:100%;
+  min-width:1178px
+}
+.view-tab {
+  position:relative;
   width:400px;
-  margin-left:-180px;
+  margin:0 auto;
   .bar_menu {
     position:absolute;
     top:31px;

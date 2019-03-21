@@ -3,13 +3,13 @@
     <div class="section-home" v-show="!showModal">
       <ul class="list-type">
         <li>
-          <a href="#none" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
+          <a href="javascript:void(0)" class="link-type" v-on:click="toggleView = false" v-bind:class="[toggleView ? '':'link-type__on']">
             <span class="icon-mockup"></span>
             Mock up
           </a>
         </li>
         <li>
-          <a href="#none" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
+          <a href="javascript:void(0)" class="link-type" v-on:click="toggleView = true" v-bind:class="[toggleView ? 'link-type__on':'']">
             <span class="icon-imagelist"></span>
             Image List
           </a>
@@ -25,7 +25,7 @@
         <div class="list-item">
           <h3 class="title-sub">Framer Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in framerItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -42,7 +42,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@
         <div class="list-item">
           <h3 class="title-sub">FramerX Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in framerXItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -70,7 +70,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
         <div class="list-item">
           <h3 class="title-sub">Lottie Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in lottieItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -98,7 +98,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -109,7 +109,7 @@
         <div class="list-item">
           <h3 class="title-sub">Principle Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in principleItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -126,7 +126,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -137,7 +137,7 @@
         <div class="list-item">
           <h3 class="title-sub">Sketch Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in sketchItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -154,7 +154,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -165,7 +165,7 @@
         <div class="list-item">
           <h3 class="title-sub">HTML Interactions<span class="none-text">목록이 없습니다.</span></h3>
           <div class="item" v-for="(tools, index) in htmlItem" :key="index" v-if="tools.title.includes(searchItem) || tools.tag.includes(searchItem)">
-            <a href="#none" class="link-thumb" v-on:click="dataTarget(tools)">
+            <a href="javascript:void(0)" class="link-thumb" v-on:click="dataTarget(tools)">
               <span class="bg-phone">
                 <span class="box-gif" v-bind:style="{ 'background-image': 'url(' + tools.gifImg + ')' }">
                 </span>
@@ -182,7 +182,7 @@
             <a v-bind:href="tools.url" class="link-example" target="_blank">{{ tools.url }}</a>
             <ul class="wrap-tag">
               <li v-for="tags in tools.tag" :key="tags">
-                <a href="#none" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
+                <a href="javascript:void(0)" class="link-tag" v-bind:value="tags" v-bind:class="[searchItem == tags ? 'on-tag': '']" v-on:click="searchTag(tags)" v-scroll-to="'#wrapContainer'">{{ tags }}</a>
               </li>
             </ul>
           </div>
@@ -211,7 +211,7 @@
           </div>
           <div class="detail-code" v-html="modalSource"></div>
         </div>
-        <a href="#none" class="link-close" v-on:click="modalClose">
+        <a href="javascript:void(0)" class="link-close" v-on:click="modalClose">
           <img src="../images/ic-back@2x.png" alt="닫기">
         </a>
       </div>
