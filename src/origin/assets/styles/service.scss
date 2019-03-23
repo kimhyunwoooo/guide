@@ -175,6 +175,21 @@ $nav-height: 240;
       @include ir-pm;
     }
   }
+  .service-copyright {
+    padding-top:75px;
+    > img {
+      display:block;
+    }
+    > small {
+      display:block;
+      margin-top:5px;
+      font-size:10px;
+      line-height:1.2;
+      color:#ccc;
+      word-break:keep-all;
+      padding-right:10px;
+    }
+  }
 }
 .side__close {
   .section-sidebar{

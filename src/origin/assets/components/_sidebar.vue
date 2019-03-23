@@ -166,8 +166,11 @@
         </li>
       </ul>
     </div>
+    <div class="service-copyright">
+      <img src="../images/sk-planet-logo@2x.png" width="72" height="34" alt="">
+      <small>COPYRIGHT © SK PLANET CO.<br> LTD. ALL RIGHTS RESERVED.</small>
+    </div>
   </div>
-
 </template>
 
 <script>
