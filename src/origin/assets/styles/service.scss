@@ -177,6 +177,8 @@ $nav-height: 240;
   }
   .service-copyright {
     padding-top:75px;
+    transition:opacity .15s;
+    transition-delay: .3s;
     > img {
       display:block;
     }
@@ -219,8 +221,10 @@ $nav-height: 240;
         background-size:24px;
       }
     }
-    .box-tag {
+    .box-tag,.service-copyright {
+      overflow:hidden;
       width:0;
+      height:0;
       opacity:0;
       transition:opacity 0s;
       transition-delay: 0s;
