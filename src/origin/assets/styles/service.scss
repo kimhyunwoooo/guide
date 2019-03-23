@@ -142,7 +142,42 @@ $nav-height: 240;
   &::-webkit-scrollbar {
   display:none;
   }
-  &.side__close {
+  .title-logo {
+    position:relative;
+    height:40px;
+    left:0;
+    margin-bottom:74px;
+    transition:left .5s;
+    img {
+      opacity:1;
+      transition:opacity .2s;
+    }
+  }
+  .title-navigation {
+    @include screen-out;
+  }
+  .btn-fold {
+    position:absolute;
+    top:0;
+    left:0;
+    width:72px;
+    height:72px;
+    padding:24px;
+    box-sizing:border-box;
+    outline: none;
+    transition:background .3s;
+    .icon-fold {
+      display:block;
+      width:24px;
+      height:24px;
+      background:url('../images/ic-menu-off@2x.png') no-repeat;
+      background-size:24px;
+      @include ir-pm;
+    }
+  }
+}
+.side__close {
+  .section-sidebar{
     width:72px;
     padding-left:23px;
     box-shadow:none;
@@ -181,40 +216,8 @@ $nav-height: 240;
       }
     }
   }
-  .title-logo {
-    position:relative;
-    height:40px;
-    left:0;
-    margin-bottom:74px;
-    transition:left .5s;
-    img {
-      opacity:1;
-      transition:opacity .2s;
-    }
-  }
-  .title-navigation {
-    @include screen-out;
-  }
-  .btn-fold {
-    position:absolute;
-    top:0;
-    left:0;
-    width:72px;
-    height:72px;
-    padding:24px;
-    box-sizing:border-box;
-    outline: none;
-    transition:background .3s;
-    .icon-fold {
-      display:block;
-      width:24px;
-      height:24px;
-      background:url('../images/ic-menu-off@2x.png') no-repeat;
-      background-size:24px;
-      @include ir-pm;
-    }
-  }
 }
+
 
 //본문
 .section-content {
@@ -229,7 +232,7 @@ $nav-height: 240;
     position:relative;
     width:1040px;
     margin:0 auto;
-    padding:0 50px 0 80px;
+    padding-left:80px;
   }
 }
 #pageUpdate,#pageAbout,#pageDocs,.view-item,.box-search {
@@ -244,7 +247,7 @@ $nav-height: 240;
   width:205px;
   position:absolute;
   top:-98px;
-  right:78px;
+  right:57px;
   z-index:9999;
   li {
     float:left;
@@ -280,6 +283,7 @@ $nav-height: 240;
 
 //검색창
 .box-search {
+  overflow:hidden;
   position:absolute;
   top:0;
   right:78px;
@@ -298,6 +302,7 @@ $nav-height: 240;
     background:url('../images/search-icon.png');
     background-size:40px 20px;
     margin-right:0;
+    transition:.15s;
   }
   .input-search {
     display:block;
@@ -318,8 +323,8 @@ $nav-height: 240;
     padding-left:0;
     padding-right:35px;
     .icon-search {
-      left:initial;
-      right:0;
+      left:-35px;
+      opacity:0;
       background-position:-20px 0;
     }
     .input-search {
@@ -335,10 +340,10 @@ $nav-height: 240;
     overflow:hidden;
     position:absolute;
     top:0;
-    right:20px;
-    width:24px;
-    height:24px;
-    background:red;
+    right:4px;
+    width:16px;
+    height:16px;
+    background:url('../images/search-del.png');
     text-indent:-9999px;
   }
 }

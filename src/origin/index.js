@@ -29,15 +29,26 @@ Vue.component('modal', {
 
 //텝메뉴 이벤트
 let tabItem = document.querySelectorAll('.list-tab>li .link-tab');
-let targetBar = document.getElementById('tabBar')
+let targetBar = document.getElementById('tabBar');
+function pageSet(){
+  let currentPage = window.location.hash.substr(1);
+  let tabArr = new Array()
+  for (let i = 0; i < tabItem.length; i++){
+    tabArr.push({name: tabItem[i].dataset.page,position:tabItem[i].dataset.position,width:tabItem[i].dataset.width})
+  };
+  for (let i = 0; i < tabArr.length; i++){
+    if(currentPage == tabArr[i].name){
+      targetBar.style.left = tabArr[i].position + 'px';
+      targetBar.style.width = tabArr[i].width + 'px';
+    }
+  }
+}pageSet()
 for (let i = 0; i < tabItem.length; i++){
   tabItem[i].addEventListener("click",function (e) {
-    let targetPosition = this.dataset.position;
-    let targetWidth = this.dataset.width;
-    targetBar.style.left = targetPosition + 'px';
-    targetBar.style.width = targetWidth + 'px';
+    pageSet();
   })
 }
+
 let homeIndex = document.querySelectorAll('.section-sidebar .link-nav,.section-sidebar .link-tag');
 for (let i = 0; i < homeIndex.length; i++){
   homeIndex[i].addEventListener("click",function (e) {
@@ -45,6 +56,9 @@ for (let i = 0; i < homeIndex.length; i++){
     targetBar.style.width ='51px';
   })
 }
+
+
+
 
 //사이드 메뉴
 let navGroup = document.querySelectorAll('.nav-wrap .link-nav')
@@ -57,12 +71,11 @@ for (let i = 0; i < navGroup.length; i++){
   })
 }
 
-let sideBar = document.querySelector('.section-sidebar');
+let sideBar = document.getElementById('wrapContainer');
 sideBarFunc();
 window.addEventListener('resize',sideBarFunc);
 function sideBarFunc(){
   let documentWidth = window.innerWidth;
-  console.log(documentWidth);
   if(documentWidth < 1200 ) {
     sideBar.classList.add('side__close')
   } else {

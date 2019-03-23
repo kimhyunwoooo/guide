@@ -1,9 +1,9 @@
 <template>
-  <div class="section-sidebar" v-bind:class="{side__close:toggleBar}">
+  <div class="section-sidebar">
     <h1 class="title-logo">
       <img src="../images/logo@2x.png" width="150" height="40" class="logo-img" alt="INTERACTION CATALOG">
     </h1>
-    <button type="button" class="btn-fold" v-on:click="toggleBar = !toggleBar"><span class="icon-fold">메뉴 접기</span></button>
+    <button type="button" class="btn-fold" v-on:click="selSidebar(toggleBar = !toggleBar)"><span class="icon-fold">메뉴 접기</span></button>
     <div class="box-nav">
       <h2 class="title-navigation">네비게이터</h2>
       <ul class="nav-wrap">
@@ -188,9 +188,6 @@
           htmlItem : itemList.item.html,
         }
       },
-      mounted() {
-        BUS.$on('toggleBarBus', this.receivetoggleBarBus)
-      },
       methods: {
         selTools : function(){
           BUS.$emit('toolsBus',false)
@@ -203,6 +200,9 @@
         },
         selTags: function(tags){
           BUS.$emit('tagBus',tags);
+        },
+        selSidebar: function(e){
+          BUS.$emit('sidebarBus',e);
         },
         filterCate : function(cate){
           return cate
